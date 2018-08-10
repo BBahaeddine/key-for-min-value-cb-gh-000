@@ -6,10 +6,7 @@ def key_for_min_value(name_hash)
     nil
   else
     minVal = name_hash.first[1]
-    # minVal = 0
     keyMinVal = name_hash.first[0]
-    # keyMinVal = ""
-    binding.pry
     name_hash.each{|key, value|
       if value < minVal
         minVal = value
