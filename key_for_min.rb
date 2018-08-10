@@ -5,9 +5,9 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     nil
   else
-    minVal = name_hash.values[0]
+    minVal = name_hash.first[1]
     # minVal = 0
-    keyMinVal = name_hash.keys[0]
+    keyMinVal = name_hash.first[0]
     # keyMinVal = ""
     binding.pry
     name_hash.each{|key, value|
